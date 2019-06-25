@@ -9,7 +9,7 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     num = params[:number].to_i
-    @squared_number =  num ** num 
+    @squared_number = (num ** num) 
     # binding.pry
     @squared_number
   end
