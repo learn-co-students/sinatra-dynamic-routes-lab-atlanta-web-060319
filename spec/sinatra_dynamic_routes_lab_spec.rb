@@ -23,7 +23,6 @@ describe App do
   describe 'GET /square/:number' do
     it 'sends a 200 status code' do
       get '/square/4'
-
       expect(last_response.status).to eq(200)
     end
 
